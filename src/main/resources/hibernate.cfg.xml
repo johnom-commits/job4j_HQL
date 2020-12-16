@@ -17,5 +17,8 @@
         <property name="use_sql_comments">false</property>
 
         <mapping class="ru.job4j.hql.Candidate" />
+        <mapping class="ru.job4j.hql.Vacancy" />
+        <mapping class="ru.job4j.hql.JobDatabase" />
+
     </session-factory>
 </hibernate-configuration>

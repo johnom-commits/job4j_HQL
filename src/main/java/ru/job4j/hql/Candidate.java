@@ -21,6 +21,9 @@ public class Candidate {
 
     private double salary;
 
+    @OneToOne(fetch = FetchType.LAZY)
+    private JobDatabase database;
+
     public static Candidate of(String name, int experience, double salary) {
         Candidate candidate = new Candidate();
         candidate.name = name;
